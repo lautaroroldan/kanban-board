@@ -1,5 +1,6 @@
 import { create } from "zustand"
 import { v4 as uuid } from 'uuid';
+import { persist } from "zustand/middleware";
 export type Status = 'TODO' | 'IN_PROGRESS' | 'DONE'
 
 export type Task = {
@@ -21,7 +22,7 @@ export type Actions = {
     updateTask: (id: string, status: Status) => void
 }
 
-const useTodoStore = create<State & Actions>()((set) => ({
+const useTodoStore = create<State & Actions>()(persist((set) => ({
     tasks: [],
     draggedTask: null,
     addTask: (title: string, description?: string) => set(state => ({ tasks: [...state.tasks, { id: uuid(), title, description, status: 'TODO' }] })),
@@ -31,6 +32,10 @@ const useTodoStore = create<State & Actions>()((set) => ({
     },
     orderTasks: (tasks: Task[]) => set({ tasks }),
     updateTask: (id: string, status: Status) => set(state => ({ tasks: state.tasks.map(task => task.id === id ? { ...task, status } : task) }))
-}))
+}),
+    {
+        name: 'todo-store',
+    }
+))
 
 export default useTodoStore
