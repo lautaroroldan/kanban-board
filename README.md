@@ -23,8 +23,10 @@ El estilo visual del tablero Kanban está inspirado en el video tutorial de **Ha
    ```bash
    git clone https://github.com/lautaroroldan/kanban-board.git
 2. Instala las dependencias:
+    ```bash
     npm install
 3. Ejecuta el proyecto en modo de desarrollo:
+    ```bash
     npm run dev
 4. Abre el navegador y ve a http://localhost:3000 para ver la aplicación en funcionamiento.
 
