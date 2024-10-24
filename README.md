@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanban Board
 
-## Getting Started
+Este es un proyecto de **Kanban Board** desarrollado con [Next.js](https://nextjs.org/).
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+El Kanban Board es una aplicación web que permite gestionar tareas de manera visual utilizando un sistema de tarjetas y columnas. Es ideal para organizar proyectos y visualizar el progreso de las tareas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tecnologías utilizadas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/)**: Un framework de React para el desarrollo de aplicaciones web del lado del servidor y del cliente.
+- **[Zustand](https://github.com/pmndrs/zustand)**: Para la gestión del estado global de las tareas de manera simple y eficiente.
+- **[DnD Kit](https://dndkit.com/)**: Utilizado para implementar la funcionalidad de arrastrar y soltar (drag and drop) de las tareas entre diferentes columnas.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estilo del Kanban
 
-## Learn More
+El estilo visual del tablero Kanban está inspirado en el video tutorial de **Hamed Bahram** que puedes ver [aquí](https://www.youtube.com/watch?v=BxohoXjbhKc&t=2036s). El diseño se centra en la simplicidad y una interfaz fácil de usar.
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación y uso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clona el repositorio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/lautaroroldan/kanban-board.git
+2. Instala las dependencias:
+    npm install
+3. Ejecuta el proyecto en modo de desarrollo:
+    npm run dev
+4. Abre el navegador y ve a http://localhost:3000 para ver la aplicación en funcionamiento.
 
-## Deploy on Vercel
+## Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar el proyecto o encontrar algún problema, siéntete libre de abrir un issue o enviar un pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Proyecto inspirado por el trabajo de Hamed Bahram y desarrollado con Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este `README.md` incluye toda la información relevante sobre tu proyecto y las tecnologías que utilizas, además de un enlace al video de Hamed Bahram.
+
