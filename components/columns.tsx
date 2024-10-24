@@ -52,7 +52,7 @@ export default function Columns() {
             >
                 <NewTodoDialog />
 
-                <section className='mt-10 flex gap-6 lg:gap-12'>
+                <section className='mt-10 flex gap-6 lg:gap-12 flex-col sm:flex-row'>
                     <Column title='Todo' status='TODO' data={tasks.filter(task => task.status === 'TODO')} />
                     <Column title='In Progress' status='IN_PROGRESS' data={tasks.filter(task => task.status === 'IN_PROGRESS')} />
                     <Column title='Done' status='DONE' data={tasks.filter(task => task.status === 'DONE')} />
