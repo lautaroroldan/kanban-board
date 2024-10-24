@@ -1,5 +1,5 @@
 "use client"
-import useTodoStore, { Status, Task as TaskType } from '@/store/store'
+import useTodoStore, { Status } from '@/store/store'
 import Column from './column'
 import NewTodoDialog from './new-todo-dialog'
 import { closestCenter, DndContext, DragEndEvent, DragOverEvent, KeyboardSensor, PointerSensor, TouchSensor, useSensor, useSensors } from '@dnd-kit/core'
